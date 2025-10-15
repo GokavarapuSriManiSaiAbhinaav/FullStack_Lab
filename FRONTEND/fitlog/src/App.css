@@ -1,0 +1,179 @@
+/* Simple, Clean FitLog Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.fitlog-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fitlog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fitlog-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.fitlog-subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+
+.fitlog-form {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-input, .form-select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+.form-input:focus, .form-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.submit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.logs-section {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.logs-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.table-header {
+  background: #f8f9fa;
+}
+
+.table-header th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+
+.table-row {
+  border-bottom: 1px solid #eee;
+}
+
+.table-row:hover {
+  background: #f9f9f9;
+}
+
+.table-cell {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.empty-state-text {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.empty-state-subtext {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 30px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fitlog-container {
+    padding: 15px;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fitlog-form, .logs-section {
+    padding: 20px;
+  }
+  
+  .table-header th, .table-cell {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
