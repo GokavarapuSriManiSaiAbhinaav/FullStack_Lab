@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+const BASE = import.meta.env.VITE_API_URL || 'http://localhost:2030/fitlog';
 
 export async function fetchLogs() {
   const res = await fetch(`${BASE}/logs`);
